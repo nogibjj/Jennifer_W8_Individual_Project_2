@@ -1,0 +1,21 @@
+name: python_CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: install_py packages
+        run: make install_py
+      - name: lint_py
+        run: make lint_py
+      - name: test_py
+        run: make test_py
+      - name: format_py
+        run: make format_py
