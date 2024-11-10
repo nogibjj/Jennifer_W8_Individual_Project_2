@@ -1,4 +1,5 @@
-
+[![python_CI](https://github.com/nogibjj/Jennifer_W8_Individual_Project_2/actions/workflows/python_CI.yml/badge.svg)](https://github.com/nogibjj/Jennifer_W8_Individual_Project_2/actions/workflows/python_CI.yml)
+[![Rust CI](https://github.com/nogibjj/Jennifer_W8_Individual_Project_2/actions/workflows/rust_CI.yml/badge.svg)](https://github.com/nogibjj/Jennifer_W8_Individual_Project_2/actions/workflows/rust_CI.yml)
 
 # Individual Project #2: Rust CLI Binary with SQLite
 
@@ -93,3 +94,13 @@ Based on the current implementation, the performance comparison shows that in ov
 In this project, I used GitHub Copilot as a coding assistant, especially when rewriting Python code into Rust. Additionally, Copilot provided potential reasons and solutions for me to handle errors, which proved incredibly useful for debugging! This support helped me quickly identify issues and implement fixes, making the debugging process smoother and more efficient..
 
 ## Optimized Rust Binary
+
+This project generates an optimized Rust binary that can be downloaded by visiting the GitHub Actions page [here](https://github.com/nogibjj/Jennifer_W8_Individual_Project_2/actions/runs/11761460872).
+
+1. Go to the Actions run page.
+2. Scroll down to the **Artifacts** section at the bottom.
+3. Click on **rust-sql-binary** to download the binary file.
+
+![alt text](images/image-7.png)
+
+![alt text](images/image-8.png)
