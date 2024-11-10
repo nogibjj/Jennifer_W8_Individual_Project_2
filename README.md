@@ -44,16 +44,13 @@ This project demonstrates a performance comparison between Python and Rust imple
 ├── requirements.txt
 ```
 
-## Project highlights
-* Sieve of Eratosthenes algorithm for finding prime numbers
-* Performance measurements (time and memory usage)
-* Comprehensive test cases
-* Support for various input sizes (100 to 1,000,000)
 
 ## Python and Rust - Usage & Scripts & SQL CRUD Operations
-**Python**
+### Python
 **Usage**
+
 Run the Python implementation:
+
 ``python main.py``
 
 **Script**
@@ -62,16 +59,16 @@ Run the Python implementation:
 **SQL CRUD Operations**
 ![alt text](images/image-4.png)
 
-**Rust**
-
+### Rust
 **Usage**
+
 1. Clean and Build Rust Binary:
-``
+```
 cd Rust_SQL
 cargo clean  # Clean previous builds
 cargo build --release  # Build optimized binary
 cargo run --release  # Run the optimized binary
-``
+```
 
 **Script**
 ![alt text](images/image-2.png)

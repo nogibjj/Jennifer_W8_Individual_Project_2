@@ -1,22 +1,27 @@
 # Makefile for Rust
 
+BINARY_NAME=rust_sql
+
 check:
-	cargo check
+	cd Rust_SQL && cargo check
 
 build:
-	cargo build
+	cd Rust_SQL && cargo build
 
 format:
-	cargo fmt
+	cd Rust_SQL && cargo fmt
 
 lint:
-	cargo clippy
+	cd Rust_SQL && cargo clippy
 
 test:
-	cargo test
+	cd Rust_SQL && cargo test
+
+clean:
+	cd Rust_SQL && cargo clean
 
 release:
-	cargo build --release
-
+	cd Rust_SQL && cargo build --release
+	@echo "Binary created at: Rust_SQL/target/release/$(BINARY_NAME)"
 
 all: check build format lint test

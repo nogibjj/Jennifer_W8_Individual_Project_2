@@ -1,54 +1,3 @@
-# name: Rust CI
-
-# on:
-#   push:
-#     branches:
-#       - main
-#   pull_request:
-#     branches:
-#       - main
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-
-#     env:
-#       WORKING_DIR: Calculation #change this to the rust project name you are developing.
-
-#     steps:
-#     - name: Checkout code
-#       uses: actions/checkout@v3
-
-#     - name: Install Rust
-#       uses: actions-rs/toolchain@v1
-#       with:
-#         toolchain: stable
-#         override: true
-
-#     - name: Check
-#       run: make check
-#       working-directory: ${{ env.WORKING_DIR }}
-
-#     - name: Format
-#       run: make format
-#       working-directory: ${{ env.WORKING_DIR }}
-
-#     - name: Test
-#       run: make test
-#       working-directory: ${{ env.WORKING_DIR }}
-
-#     - name: Release
-#       run: make release
-#       working-directory: ${{ env.WORKING_DIR }}
-
-#     - name: Upload Binary Artifact
-#       uses: actions/upload-artifact@v4 #v3 is scheduled for deprecation Nov 30 2024 check marketplace
-#       with:
-#         name: release-binary
-#         path: ${{ env.WORKING_DIR }}/target/release/Calculation
-
-
-
 name: Rust CI
 
 on:
@@ -91,10 +40,14 @@ jobs:
         run: cargo build --release
         working-directory: ${{ env.WORKING_DIR }}
 
+      - name: List target directory
+        run: ls -R target/
+        working-directory: ${{ env.WORKING_DIR }}
+
+
       - name: Upload Binary Artifact
         uses: actions/upload-artifact@v4
         with:
           name: rust-sql-binary
-          path: ${{ env.WORKING_DIR }}/target/release/rust_sql
+          path: Rust_SQL/target/release/Rust_SQL  # Matches the binary name in Cargo.toml
           if-no-files-found: error
-
