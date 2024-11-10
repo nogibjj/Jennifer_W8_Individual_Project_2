@@ -12,4 +12,3 @@ matplotlib
 seaborn
 prettytable
 sqlite3-api
-tracemalloc

@@ -11,8 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      WORKING_DIR: Rust_SQL
+
+    defaults:
+      run:
+        working-directory: ./Rust_SQL
 
     steps:
       - name: Checkout code
@@ -26,28 +28,22 @@ jobs:
 
       - name: Check
         run: make check
-        working-directory: ${{ env.WORKING_DIR }}
 
       - name: Format
         run: make format
-        working-directory: ${{ env.WORKING_DIR }}
 
       - name: Test
         run: make test
-        working-directory: ${{ env.WORKING_DIR }}
 
       - name: Build Release Binary
         run: cargo build --release
-        working-directory: ${{ env.WORKING_DIR }}
 
       - name: List target directory
         run: ls -R target/
-        working-directory: ${{ env.WORKING_DIR }}
-
 
       - name: Upload Binary Artifact
         uses: actions/upload-artifact@v4
         with:
           name: rust-sql-binary
-          path: Rust_SQL/target/release/Rust_SQL  # Matches the binary name in Cargo.toml
+          path: Rust_SQL/target/release/Rust_SQL
           if-no-files-found: error
