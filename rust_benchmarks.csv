@@ -1,0 +1,8 @@
+operation,language,execution_time,memory_used
+Extract,Rust,1.132,1678.72
+Transform/Load,Rust,0.057,0.00
+Query,Rust,0.003,0.00
+CRUD-Create,Rust,0.018,0.00
+CRUD-Read,Rust,0.002,0.00
+CRUD-Update,Rust,0.010,0.00
+CRUD-Delete,Rust,0.010,0.00

@@ -1,0 +1,8 @@
+operation,language,execution_time,memory_used
+Extract,Python,0.394,4532283
+Transform/Load,Python,0.254,39526
+Query,Python,0.001,10944
+CRUD-Create,Python,0.001,1367
+CRUD-Read,Python,0.0,1650
+CRUD-Update,Python,0.002,1439
+CRUD-Delete,Python,0.002,1439
