@@ -105,10 +105,10 @@ In this project, I used GitHub Copilot as a coding assistant, especially when re
 
 ## Optimized Rust Binary
 
-This project generates an optimized Rust binary that can be downloaded by visiting the GitHub Actions page [here](https://github.com/nogibjj/Jennifer_W8_Individual_Project_2/actions/runs/11761460872).
+This project generates an optimized Rust binary that can be downloaded by taking following steps: 
 
-1. Go to the Actions run page.
-2. Scroll down to the **Artifacts** section at the bottom.
+1. Visit the Github Actions page by clicking [here](https://github.com/nogibjj/Jennifer_W8_Individual_Project_2/actions).
+2. Select the latest **Rust CI** workflow, scroll down to the **Artifacts** section at the bottom.
 3. Click on **rust-sql-binary** to download the binary file.
 
 ![alt text](images/image-7.png)
