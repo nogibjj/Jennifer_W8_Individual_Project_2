@@ -12,7 +12,7 @@ This project demonstrates a performance comparison between Python and Rust imple
 
 * Extract data from a CSV file
 * Transform and load it into a SQLite database
-* Perform CRUD operations
+* Perform CRUD (Create, Read, Update and Delete) operations
 * Query the data
 * Compare and visualize performance metrics between the two implementations
 
@@ -45,21 +45,11 @@ This project demonstrates a performance comparison between Python and Rust imple
 ├── requirements.txt
 ```
 
+## Project Data
+The data used in this project comes FiveThirtyEight's public dataset: https://raw.githubusercontent.com/fivethirtyeight/data/refs/heads/master/goose/goose_rawdata.csv 
 
-## Python and Rust - Usage & Scripts & SQL CRUD Operations
-### Python
-**Usage**
 
-Run the Python implementation:
-
-``python main.py``
-
-**Script**
-![alt text](images/image.png)
-
-**SQL CRUD Operations**
-![alt text](images/image-4.png)
-
+## Python and Rust - Implementation & Scripts & SQL CRUD Operations
 ### Rust
 **Usage**
 
@@ -71,20 +61,40 @@ cargo build --release  # Build optimized binary
 cargo run --release  # Run the optimized binary
 ```
 
+![alt text](images/image-0.png)
+
+![alt text](images/image-1.png)
+
 **Script**
 ![alt text](images/image-2.png)
 
 **SQL CRUD Operations**
 ![alt text](images/image-3.png)
 
+### Python
+**Usage**
 
-## Performance Comparison
+Run the Python implementation:
 
-![alt text](images/image-6.png)
+``python main.py``
 
 ![alt text](images/image-5.png)
 
-Based on the current implementation, the performance comparison shows that in overall Python is 1.6x faster in total execution, and Rust consistently uses less memory across all operations. One interesting thing is that I find some Rust Memory value is zero, which may due to the following reasons:
+**Script**
+![alt text](images/image.png)
+
+**SQL CRUD Operations**
+![alt text](images/image-4.png)
+
+## Performance Comparison
+
+![alt text](images/image-9.png)
+
+![alt text](images/image-10.png)
+
+Based on the current implementation, the performance comparison shows that in overall Rust is 1.1x faster in total execution. Also, Rust uses significantly less memory than Python across all operations. 
+
+One interesting thing is that I find some Rust Memory value is zero, which may due to the following reasons:
 * We run cargo clean and cargo build --release first, the compiled artifacts and dependencies are already built and cached
 * In release mode, Rust optimizes heavily
 * The CRUD operations are very lightweight once everything is set up

@@ -1,10 +1,10 @@
 ,execution_time,execution_time,memory_used,memory_used
 language,Python,Rust,Python,Rust
 operation,,,,
-CRUD-Create,0.0,0.018,1367.0,0.0
-CRUD-Delete,0.002,0.01,1439.0,0.0
+CRUD-Create,0.0,0.015,1367.0,0.0
+CRUD-Delete,0.002,0.009,1439.0,0.0
 CRUD-Read,0.0,0.002,1650.0,0.0
-CRUD-Update,0.002,0.01,1439.0,0.0
-Extract,0.478,1.132,4532226.0,1678.72
-Query,0.0,0.003,10944.0,0.0
-Transform/Load,0.265,0.057,39565.0,0.0
+CRUD-Update,0.002,0.013,1439.0,0.0
+Extract,1.125,1.154,4531963.0,1959.41
+Query,0.0,0.002,10944.0,0.0
+Transform/Load,0.256,0.055,39565.0,0.0
