@@ -5,7 +5,7 @@
 
 ## Video Demo
 
-![alt text](images/image-11.png)(https://youtu.be/kDIr0-6xhpk)
+[![alt text](images/image-11.png)](https://youtu.be/kDIr0-6xhpk)
 
 ## Project Purpose
 This project demonstrates a performance comparison between Python and Rust implementations of data processing operations using SQLite. It includes ETL (Extract, Transform, Load) processes and CRUD operations on a Goose dataset. This project consists of parallel implementations in both Rust and Python that:
